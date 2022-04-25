@@ -1,2 +1,2 @@
 # MDtest
-![](MDtest/Md/img/screens/AfficherPatient.PNG)
+![](https://github.com/arghamza/MDtest/blob/main/Md/img/screens/AfficherPatient.png)

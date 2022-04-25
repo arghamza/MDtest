@@ -1,2 +1,2 @@
 # MDtest
-![](Md/img/screens/AfficherPatient.PNG)
+![](/Md/img/screens/AfficherPatient.PNG)

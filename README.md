@@ -11,7 +11,7 @@
 # Énoncé 
 ## Partie 1
 ### Afficher les Patients
-![](https://github.com/arghamza/SpringMVC-Thymeleaf-SpringData/blob/master/Tp3/img/screens/AfficherPatient.PNG)
+![](https://github.com/arghamza/MDtest/blob/main/img/screens/AfficherPatient.png)
 ```html
 <table class="table">
             <thead>
@@ -65,7 +65,7 @@ public String patients(Model model,@RequestParam(name="size",defaultValue = "5")
 }
 ```
 ### Chercher les Patients
-![](https://github.com/arghamza/SpringMVC-Thymeleaf-SpringData/blob/master/Tp3/img/screens/Chercher.PNG)
+![](https://github.com/arghamza/MDtest/blob/main/img/screens/Chercher.PNG)
 ```html
 <form method="get" th:action="@{/user/index}">
                 <label>Key word</label>
@@ -78,7 +78,7 @@ Page<Patient> patients=patientRepository.findByNomContains(keyword,PageRequest.o
 }
 ```
 ### Supprimer un Patient
-![](https://github.com/arghamza/SpringMVC-Thymeleaf-SpringData/blob/master/Tp3/img/screens/Delete.PNG)
+![](https://github.com/arghamza/MDtest/blob/main/img/screens/Delete.PNG)
 ```html
 <td sec:authorize="hasAuthority('ADMIN')">
                     <a onclick="return confirm('Etes vous sure')" class="btn btn-danger" th:href="@{/admin/delete(id=${p.id},keyword=${keyword},page=${currentPage})}">
@@ -117,7 +117,7 @@ Page<Patient> patients=patientRepository.findByNomContains(keyword,PageRequest.o
 </html>
 ```
 ### Saisir et Ajouter des Patients
-![](https://github.com/arghamza/SpringMVC-Thymeleaf-SpringData/blob/master/Tp3/img/screens/Add.PNG)
+![](https://github.com/arghamza/MDtest/blob/main/img/screens/Add.PNG)
 ```html
 <form method="post" th:action="@{/admin/save}">
             <div>
@@ -164,7 +164,7 @@ Page<Patient> patients=patientRepository.findByNomContains(keyword,PageRequest.o
     }
 ```
 ### Editer et Mettre à jour un Patient
-![](https://github.com/arghamza/SpringMVC-Thymeleaf-SpringData/blob/master/Tp3/img/screens/Edit.PNG)
+![](https://github.com/arghamza/MDtest/blob/main/img/screens/Edit.PNG)
 ```html
 <form method="post" th:action="@{/admin/save(page=${page} , keyword=${keyword})}">
             <div >
@@ -211,7 +211,7 @@ Page<Patient> patients=patientRepository.findByNomContains(keyword,PageRequest.o
     }
 ```
 ## Partie 3 & 4
-![](https://github.com/arghamza/SpringMVC-Thymeleaf-SpringData/blob/master/Tp3/img/screens/Login.PNG)
+![](https://github.com/arghamza/MDtest/blob/main/img/screens/Login.PNG)
 ### Ajouter la dépendance Maven de Spring Security
 ```xml
         <dependency>
